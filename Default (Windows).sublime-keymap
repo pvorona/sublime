@@ -25,6 +25,6 @@
 { "keys": ["f3"], "command": "find_under" },
 
 { "keys": ["alt+/"], "command": "focus_side_bar" },
-
+{ "keys": ["ctrl+`"], "command": "open_terminal_project_folder" }
 
 ]

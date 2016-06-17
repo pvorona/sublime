@@ -23,8 +23,10 @@
 { "keys": ["ctrl+shift+n"], "command": "new_file" },
 
 { "keys": ["f3"], "command": "find_under" },
-
-{ "keys": ["alt+/"], "command": "focus_side_bar" },
-{ "keys": ["ctrl+`"], "command": "open_terminal_project_folder" }
+{ "keys": ["ctrl+`"], "command": "open_terminal_project_folder" },
+// { "keys": ["ctrl+w"], "command": "find_under_expand" },
+{ "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
+{ "keys": ["ctrl+]"], "command": "move_to", "args": {"to": "brackets"} },
+{ "keys": ["ctrl+["], "command": "move_to", "args": {"to": "brackets"} }
 
 ]

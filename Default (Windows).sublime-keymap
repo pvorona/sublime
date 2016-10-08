@@ -22,11 +22,38 @@
 
 { "keys": ["ctrl+shift+n"], "command": "new_file" },
 
-{ "keys": ["f3"], "command": "find_under" },
 { "keys": ["ctrl+`"], "command": "open_terminal_project_folder" },
 // { "keys": ["ctrl+w"], "command": "find_under_expand" },
 { "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
 { "keys": ["ctrl+]"], "command": "move_to", "args": {"to": "brackets"} },
 { "keys": ["ctrl+["], "command": "move_to", "args": {"to": "brackets"} },
-{ "keys": ["alt+/"], "command": "focus_side_bar" }
+{ "keys": ["alt+/"], "command": "focus_side_bar" },
+{ "keys": ["f3"], "command": "find_under_expand" },
+{ "keys": ["ctrl+'"], "command": "bh_key",
+    "args":
+    {
+        "lines" : true,
+        "plugin":
+        {
+            "type": ["single_quote", "double_quote", "single_quote", "double_quote"],
+            "command": "bh_modules.swapquotes"
+        }
+    }
+},
+{
+  "keys": ["ctrl+;"],
+  "command": "run_macro_file",
+  "args": { "file": "res://Packages/User/semicolon.sublime-macro" }
+},
+{
+  "keys": ["ctrl+,"],
+  "command": "run_macro_file",
+  "args": { "file": "res://Packages/User/comma.sublime-macro" }
+},
+{ "keys": ["enter"], "command": "commit_completion", "context":
+  [
+    { "key": "auto_complete_visible" },
+    { "key": "setting.auto_complete_commit_on_tab" }
+  ]
+},
 ]

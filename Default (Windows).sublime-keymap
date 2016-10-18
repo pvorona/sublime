@@ -56,4 +56,22 @@
     { "key": "setting.auto_complete_commit_on_tab" }
   ]
 },
+{
+    "no_outside_adj": null,
+    "keys": ["ctrl+shift+["],
+    "command": "bh_key",
+    "args":
+    {
+        "lines" : true,
+        "plugin":
+        {
+            "type": ["__all__"],
+            "command": "bh_modules.bracketselect"
+        }
+    }
+},
+{ "keys": ["ctrl+up"], "command": "select_lines", "args": {"forward": false} },
+{ "keys": ["ctrl+down"], "command": "select_lines", "args": {"forward": true} },
+{ "keys": ["ctrl+shift+r"], "command": "goto_symbol_in_project" },
+
 ]
